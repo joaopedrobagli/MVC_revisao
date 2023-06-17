@@ -29,7 +29,7 @@ class BancodeDados{
    public function RetornarCarro()
 {
     $conexao = $this->ConectarBD();
-    $consulta = "SLELECT * FROM carro";
+    $consulta = "SELECT * FROM carro";
     $listaCarro = mysqli_query($conexao, $consulta);
     return $listaCarro;    
     }
